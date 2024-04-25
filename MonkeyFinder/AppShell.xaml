@@ -2,14 +2,12 @@
 <Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        x:Class="MonkeyFinder.AppShell"
-       xmlns:view="clr-namespace:MonkeyFinder.Views"
+       xmlns:view="clr-namespace:MonkeyFinder.View"
        xmlns:viewmodel="clr-namespace:MonkeyFinder.ViewModel"
        x:DataType="viewmodel:AppShellViewModel">
 
-  <FlyoutItem>
-    <ShellContent Title="Monkeys"
-                  ContentTemplate="{DataTemplate view:MainPage}"
-                  Route="MainPage" />
+  <ShellContent Title="Monkeys"
+                ContentTemplate="{DataTemplate view:MainPage}"
+                Route="MainPage" />
 
-  </FlyoutItem>
 </Shell>

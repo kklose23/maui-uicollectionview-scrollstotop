@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="MonkeyFinder.View.MainPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:MonkeyFinder.Model"
+             xmlns:viewmodel="clr-namespace:MonkeyFinder.ViewModel"
+             xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
+             Title="Monkeys"
+             x:DataType="viewmodel:MonkeysViewModel"
+             x:Name="this">
+
+  <CollectionView ItemsSource="{Binding Items}">
+    <CollectionView.ItemTemplate>
+      <DataTemplate>
+        <Grid>
+          <Label Text="{Binding .}"
+                 FontSize="100"/>
+        </Grid>
+      </DataTemplate>
+    </CollectionView.ItemTemplate>
+  </CollectionView>
+
+  <!--<ScrollView>
+    <VerticalStackLayout BindableLayout.ItemsSource="{Binding Items}">
+      <BindableLayout.ItemTemplate>
+        <DataTemplate>
+          <Grid>
+            <Label Text="{Binding .}"
+                   FontSize="100" />
+          </Grid>
+        </DataTemplate>
+      </BindableLayout.ItemTemplate>
+    </VerticalStackLayout>
+  </ScrollView>-->
+
+</ContentPage>
