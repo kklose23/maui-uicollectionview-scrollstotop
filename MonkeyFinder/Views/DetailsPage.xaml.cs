@@ -1,4 +1,4 @@
-namespace MonkeyFinder.View;
+namespace MonkeyFinder.Views;
 
 public partial class DetailsPage : ContentPage
 {

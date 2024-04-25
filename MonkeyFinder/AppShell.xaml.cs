@@ -1,4 +1,4 @@
-using MonkeyFinder.View;
+using MonkeyFinder.Views;
 
 namespace MonkeyFinder;
 

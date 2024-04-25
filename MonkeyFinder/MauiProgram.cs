@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Maui;
 using MonkeyFinder.Services;
-using MonkeyFinder.View;
+using MonkeyFinder.Views;
 
 namespace MonkeyFinder;
 
